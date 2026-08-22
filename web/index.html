@@ -1,1 +1,64 @@
-<!-- WebRTC Interface Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERONICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+eruda.init();
+</script>
+
+<body>
+
+    <!-- ROLE SELECTION -->
+    <div id="roleMenu">
+
+        <h1>VERONICA</h1>
+
+        <button id="broadcasterBtn">
+            🎥 Become Broadcaster
+        </button>
+
+        <button id="viewerBtn">
+            👁 Become Viewer
+        </button>
+
+    </div>
+
+    <!-- NORMAL MODE -->
+    <div id="singleView">
+
+        <video id="singleVideo" autoplay playsinline></video>
+        <button id="sendFrameBtn">Send Frame to Q</button>
+
+        <canvas id="captureCanvas" style="display:none;"></canvas>
+        <pre id="qResponse"></pre>
+    </div>
+
+    <!-- VR MODE -->
+    <div id="vrView">
+
+        <video id="leftVideo" autoplay playsinline></video>
+
+        <video id="rightVideo" autoplay playsinline></video>
+
+    </div>
+
+    <!-- CONTROLS -->
+    <div id="controls">
+
+        <button id="toggleBtn">
+            Switch to VR
+        </button>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
