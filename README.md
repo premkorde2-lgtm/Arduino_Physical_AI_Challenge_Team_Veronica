@@ -27,7 +27,6 @@ Team Veronica's Physical AI ecosystem integrates a custom wearable ESP32 watch, 
 Repository Navigation & Directory Flow
 Each directory contains a dedicated README.md explaining its specific implementation:
 
-Getting Started Guide for New Developers
 Follow these steps sequentially to bring up the full stack:
 
 Step 1: Flashing Hardware
