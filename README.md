@@ -27,20 +27,6 @@ Team Veronica's Physical AI ecosystem integrates a custom wearable ESP32 watch, 
 Repository Navigation & Directory Flow
 Each directory contains a dedicated README.md explaining its specific implementation:
 
-firmware/: Hardware logic for microcontrollers.
-
-firmware/watch/: ESP32 custom PCB firmware, UART flashing hack guide, and sensor pinouts.
-
-firmware/uno_q/: C++ MCU code managing low-level I/O and RPC bridge messaging.
-
-server/: Python OpenCV UDP video stream receiver (server.py) running on the UNO Q Linux environment.
-
-web/: Node.js, Express, and Socket.IO backend with frontend assets (index.html, script.js) for the dashboard.
-
-scripts/: Operational setup automation for remote SSH and VNC environment configuration.
-
-docs/: System schematics, visual setup proofs, and image gallery.
-
 Getting Started Guide for New Developers
 Follow these steps sequentially to bring up the full stack:
 
