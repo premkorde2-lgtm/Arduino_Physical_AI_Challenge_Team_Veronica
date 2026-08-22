@@ -1,1 +1,1 @@
-# Hardware Schematics and Pinouts
+# Hardware Schematics 
