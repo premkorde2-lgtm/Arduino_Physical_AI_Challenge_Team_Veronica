@@ -23,3 +23,52 @@ Team Veronica's Physical AI ecosystem integrates a custom wearable ESP32 watch, 
                                          |  - WebRTC Video Stream|
                                          +-----------------------+
 
+
+Repository Navigation & Directory Flow
+Each directory contains a dedicated README.md explaining its specific implementation:
+
+firmware/: Hardware logic for microcontrollers.
+
+firmware/watch/: ESP32 custom PCB firmware, UART flashing hack guide, and sensor pinouts.
+
+firmware/uno_q/: C++ MCU code managing low-level I/O and RPC bridge messaging.
+
+server/: Python OpenCV UDP video stream receiver (server.py) running on the UNO Q Linux environment.
+
+web/: Node.js, Express, and Socket.IO backend with frontend assets (index.html, script.js) for the dashboard.
+
+scripts/: Operational setup automation for remote SSH and VNC environment configuration.
+
+docs/: System schematics, visual setup proofs, and image gallery.
+
+Getting Started Guide for New Developers
+Follow these steps sequentially to bring up the full stack:
+
+Step 1: Flashing Hardware
+Wearable Watch: Follow the custom PCB flashing guide in firmware/watch/README.md to upload watch_main.ino via an external UART bridge.
+
+Arduino UNO Q MCU: Flash uno_q_main.ino to the MCU layer following instructions in firmware/uno_q/README.md.
+
+Step 2: Environment Configuration
+Set up SSH access and VNC remote desktop on the Arduino UNO Q Debian layer using the steps detailed in scripts/README.md.
+
+Step 3: Launching Video & Telemetry Servers
+SSH into the UNO Q Linux environment and execute the video stream receiver:
+
+Bash
+python3 server/server.py
+(See server/README.md for detailed dependencies).
+
+Launch the Node.js web dashboard:
+
+Bash
+cd web
+npm install
+npm start
+(See web/README.md for full endpoint configurations).
+
+Step 4: Verify Deployment
+Open your browser and navigate to http://localhost:3000 to inspect live video feeds, telemetry graphs, and emergency watch alerts.
+
+System Gallery & Proofs
+Visual documentation, hardware schematics, and terminal logs are available in the docs/images/ gallery.
