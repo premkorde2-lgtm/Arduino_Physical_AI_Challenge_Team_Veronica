@@ -16,7 +16,7 @@ This directory contains the Node.js Express server, Socket.IO signaling layer, a
    [ web/index.html + script.js ]
    (Live Telemetry & Feed Display)
 
-📂 File Structure
+ File Structure
 server.js: Express HTTP server & Socket.IO signaling broker.
 
 package.json: Node project metadata & dependency declarations (express, socket.io).
@@ -25,7 +25,7 @@ index.html: Responsive UI layout featuring video containers and telemetry displa
 
 script.js: Frontend client logic handling WebSocket events, DOM rendering, and user controls.
 
-🚀 Local Execution & Setup
+ Local Execution & Setup
 1. Install Node Dependencies
 Run the following command inside the web/ directory:
 
