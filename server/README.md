@@ -49,3 +49,4 @@ Exit: Press q while focused on the OpenCV window or send Ctrl + C in the termina
 ---
 
 Once committed, navigate to **`web/index.html`** or **`firmware/watch/watch_main.ino`** to continue building the repository!
+
