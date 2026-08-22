@@ -23,7 +23,7 @@ This directory contains `server.py`, an asynchronous UDP receiver that ingests h
                       ▼
         [ VNC Desktop Window Display ]
 
-##Execution Steps
+Execution Steps
 
 1. Install System & Python Dependencies
 Ensure OpenCV and NumPy are installed on the UNO Q Debian MPU layer:
