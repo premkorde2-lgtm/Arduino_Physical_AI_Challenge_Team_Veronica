@@ -1,10 +1,10 @@
-# 🎥 VERONICA Q UDP Video Stream Server
+#  VERONICA Q UDP Video Stream Server
 
 This directory contains `server.py`, an asynchronous UDP receiver that ingests high-framerate JPEG video frames from remote nodes (such as wearable cameras or edge modules) and displays them on the Arduino UNO Q desktop display buffer over VNC (`:0`).
 
 ---
 
-## 🏗 Pipeline Architecture
+##  Pipeline Architecture
 
 ```text
 [ Remote Camera / Watch Node ]
